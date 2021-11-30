@@ -2,7 +2,7 @@ import React from "react";
 import { NotionRenderer, BlockMapType } from "react-notion";
 import Head from "next/head";
 import Link from "next/link";
-import fetch from "node-fetch";
+// import fetch from "node-fetch";
 
 export async function getServerSideProps(context) {
   const pageId = context.params?.pageId;
@@ -18,8 +18,8 @@ export async function getServerSideProps(context) {
   return {
     props: {
       blockMap: data,
+      revalidate: 1,
     },
-    revalidate: 1,
   };
 }
 
