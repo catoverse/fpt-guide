@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content={"/thumbnail.png"} />
         <meta name="description" content="This guide is the most comprehensive resource on first principles thinking, featuring handpicked resources from the best thinkers alive today!" />
       </Head>
-    <Component {...pageProps} />
+      <Component {...pageProps} />
     </>
   );
 }
